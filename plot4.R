@@ -14,7 +14,7 @@ with(dataset, plot(datetime, Global_active_power, pch="", ylab= "Global Active P
 with(dataset, lines(datetime, Global_active_power))
 
 with(dataset, plot(datetime, as.double(as.vector(Voltage)), xlab = "datetime", ylab="Voltage", pch=""))
-with(dataset, lines(datetime, Global_active_power))
+with(dataset, lines(datetime, as.double(as.vector(Voltage))))
 
 
 with(dataset, plot(datetime, Sub_metering_1, ylim = c(0,40), pch="", ylab= "Energy sub metering", xlab = ""))
